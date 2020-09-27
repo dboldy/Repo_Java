@@ -36,6 +36,13 @@ public class homeWork1 {
         System.out.println("Name initials - " + nameInitials);
         System.out.println("My name is " + myName);
 
+
+        int mile = 3;
+        double oneKM = 1.61;
+        double KM = mile * oneKM;
+        boolean isTrue = KM == 5;
+        System.out.println("3 miles is 5 kilometre  " + isTrue);
+
     }
 
         }
