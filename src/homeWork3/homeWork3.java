@@ -32,7 +32,7 @@ public class homeWork3 {
         System.out.println("My statement with replaced chars - " + myStatement.replace('r', 'f'));
 
         String myName = "Darya";
-        int indexOfName = myName.lastIndexOf("a");
+        int indexOfName = myName.lastIndexOf("");
         System.out.println("Length of my name : " + indexOfName);
 
         String strnew = " Hello dear, how are you? ";
@@ -44,7 +44,17 @@ public class homeWork3 {
             System.out.println("Is the string value more than 10? : False");
         }
 
+         String name = "Happy";
+        boolean resault = true;
+        int number =22;
+      if(name.length()>=4 && number>2) {
+          System.out.println(name.toUpperCase());
+          System.out.println(name.replace("p", "b"));
+      }else
+      {   resault = false;}
+        System.out.println(resault);
 
+        System.out.println();
 
 
 
