@@ -39,47 +39,47 @@ public class hWork4 {
             System.out.println("My percentage " + myPer + " My grade " + myGrade);
         }
 
+
+        char gear = 'D';
+        String cMode = "Snow";
+
+
+        switch (gear) {
+            case 'P':
+                System.out.println("You can park");
+                break;
+            case 'D':
+                switch (cMode) {
+
+                    case "Snow":
+                        System.out.println("You are on a Snow mode");
+                        break;
+                    case "Eco":
+                        System.out.println("You are on Eco mode");
+                        break;
+                    case "Sport":
+                        System.out.println("You are on a Sport mode");
+                        break;
+                    default:
+                        System.out.println("Invalid mode");
+                        break;
+                }
+
+                break;
+
+            case 'N':
+                System.out.println("Put car in car wash");
+                break;
+
+            case 'R':
+                System.out.println("Reverse the car");
+                break;
+            default:
+                System.out.println("Invalid gear");
+                break;
+        }
+
     }
-
-    char gear = 'D';
-    String cMode = "Snow";
-
-
-    switch(gear) {
-        case 'P':
-            System.out.println("You can park");
-            break;
-        case 'D':
-            switch (cMode) {
-
-                case "Snow":
-                    System.out.println("You are on a Snow mode");
-                    break;
-                case "Eco":
-                    System.out.println("You are on Eco mode");
-                    break;
-                case "Sport":
-                    System.out.println("You are on a Sport mode");
-                    break;
-                default:
-                    System.out.println("Invalid mode");
-                    break;
-            }
-
-            break;
-
-        case "N":
-            System.out.println("Put car in car wash");
-            break;
-
-        case "R":
-            System.out.println("Reverse the car");
-            break;
-        default:
-            System.out.println("Invalid gear");
-            break;
-    }
-
 }
 
 
