@@ -9,7 +9,7 @@ public class homeWork5 {
         System.out.println(input1);
 
 
-        `String msg = "have a nice day to you all";
+        String msg = "have a nice day to you all";
         String[] words = msg.split(" ");
         for(String abbreviation :words)
             System.out.print(Character.toUpperCase(abbreviation.charAt(0)));
