@@ -6,8 +6,9 @@ public class homeWork6 {
         System.out.println(result);
 
         String names[] = {"Darya", "Hendra", "Daniel", "Joe"};
-        String nameToSearch = "Hendra";
+        String nameToSearch = "darya";
         nameSearch(names, nameToSearch);
+
     }
 
     public static double arrayAvg(int[] inputArray) {
@@ -21,15 +22,16 @@ public class homeWork6 {
 
     public static void nameSearch(String[] arrayInput, String givenName) {
         for (int b = 0; b < arrayInput.length; b++) {
-            if (arrayInput[b] == givenName)
+            if (arrayInput[b].equalsIgnoreCase(givenName))
             {
                 System.out.println(b);
             }
 
         }
 
+        }
 
     }
-}
+
 
 
