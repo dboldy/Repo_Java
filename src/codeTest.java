@@ -1,41 +1,44 @@
 public class codeTest {
     public static void main(String[] args) {
-        int[] array = {32, 14, 24, 98, 24, 56, 148, 24, 78, 24};
+        int[] numbers = {32, 14, 24, 98, 24, 56, 148, 24, 78, 24};
         int inputNum = 24;
-        array(arr1());
+        int[] newNumbers = removeNumbers(numbers, inputNum);
 
-        int[]array1 =   {1, 2, 4, 3, 1, 6, 1}
-        int inputNum2 = 11;
-        array1(arr1());
+        System.out.println("Array after removal contains: " );
+        for (int x : newNumbers) {
+            System.out.print( x + " ");
 
-        int[] missingNum = {1, 3, 5, 4, 2, 7};
-        int[] missingNum1 = {-1, -3, 4, 2};
-        int[] missingNum2 =  {0, 5, -1, 1, 2, 5, 3, 7, 1, 2}
-        missingNum(searchArray());
-        missingNum1(searchArray());
-        missingNum2(searchArray())
+            int userSpeed = 70;
+            checkSpeed(userSpeed);
+        }
     }
-
-    public static int searchArray(int[] inputArr) {
-        for (int i = 0; i < inputArr.length; i++) {
-            if (i != inputArr[i]) {
-                return i;
+    public static int[] removeNumbers(int[] inArray, int inNum) {
+        int j = 0;
+        int arraySize = 0;
+        for (int i = 0; i < inArray.length; i++) {
+            if (inArray[i] != inNum) {
+                arraySize++;
             }
         }
-                return inputArr.length;
-            }
 
-    public static void  arr1(String[] arrayInput, String inputNum) {
-        for (int b = 0; b < arrayInput.length; b++) {
-            if (arrayInput[b] != inputNum)
-                return nameOfReturn;
-            int[] values = new int[numOfReturn];
-            int i;
-            if (arrayInput[b] != inputNum) {
-                values[i] = arrayInput[b];
-                i++;
-            }
-                return;
+        int [] numberRemoved = new int [arraySize];
+        for (int i =0; i < inArray.length; i++ ) {
+        if (inArray[i] != inNum) {
+            numberRemoved[j] = inArray[i];
+            j++;
         }
+        }
+        return numberRemoved;
+    }
+    public static void checkSpeed (int inSpeed) {
+        int points = (inSpeed - 70);
+        if (points < 1) {
+            System.out.println("user speed = " + inSpeed + " Thank you for driving with speed limit");
+        }else if (points > 0 && points <5){
+            System.out.println("user speed = " + inSpeed + points + " points ");
+        }else {
+            System.out.println("user speed = " + inSpeed + points + "points (license suspended)");
+        }
+
     }
 }
